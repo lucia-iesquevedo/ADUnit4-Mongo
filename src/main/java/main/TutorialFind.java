@@ -38,20 +38,13 @@ public class TutorialFind {
 //  Find with size
     System.out.println("find suppliers of two different coffees");
     est.find(size("coffees",2)).into(new ArrayList()).forEach(System.out::println);
-//
-//
-//        //distinct
-//        System.out.println("find con size de un array");
-//        est.distinct("cosas.nombre",String.class).into(new ArrayList()).forEach(System.out::println);
-//
-//
+
     //projections
     System.out.println("Projection");
     est.find(eq("country","Spain")).projection(new Document("country",1).append("coffees.cofName",1).append("_id",0)).into(new ArrayList()).forEach(System.out::println);
 //
 
 //  Order by
-//
     System.out.println("Sorting");
     est.find().sort(new Document("coffees.price",1)).into(new ArrayList()).forEach(System.out::println);
 //

@@ -6,7 +6,7 @@ import org.bson.types.ObjectId;
 import java.math.BigDecimal;
 
 
-@Getter @Setter @AllArgsConstructor
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
 @Builder @ToString
 
 public class Coffee {

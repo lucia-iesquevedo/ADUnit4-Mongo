@@ -9,7 +9,7 @@ import java.util.List;
 import lombok.*;
 import org.bson.types.ObjectId;
 
-@Getter @Setter @AllArgsConstructor
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
 @Builder @ToString
 
 public class Supplier {
